@@ -37,10 +37,8 @@ int main()
 			{
 				if (attackTime >= 60)
 				{
-					const PAttack newAtt = PAttack(mainNig.getX() - 20, mainNig.getY() - 25);
 					//attackVec.push_back(newAtt);
-					//attackVec.emplace_back(PAttack(mainNig.getX() - 20, mainNig.getY() - 25));
-					attackVec.emplace_back(newAtt);
+					attackVec.emplace_back(PAttack(mainNig.getX() - 20, mainNig.getY() - 25));
 					attackTime = 0;
 				}
 			}
